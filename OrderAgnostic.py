@@ -2,6 +2,7 @@ import math
 def orderagn(arr,target):
     start = 0
     end = len(arr)-1
+    # find whether the array is sorted in ascending or descending
     isAsc = arr[start] < arr[end]
     while(start<=end):
         mid = math.floor(start+(end-start)/2)
