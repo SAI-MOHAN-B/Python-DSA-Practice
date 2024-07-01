@@ -1,4 +1,6 @@
 import math
+# https://leetcode.com/problems/peak-index-in-a-mountain-array/
+# https://leetcode.com/problems/find-peak-element/
 class Solution:
     def peakIndexInMountainArray(self, arr: List[int]) -> int:
             start = 0
