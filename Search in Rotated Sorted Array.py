@@ -39,8 +39,16 @@ class Solution:
         end = len(arr) - 1
         while start <= end:
             mid = math.floor(start + (end - start) / 2)
+            # suppose if the array exceeds the end 
+            # it reaches the end of the array 
+            # then it will throws an exception
+            # so we need to check whether the mid is within end
+            # or it is lesser than array
             if mid < end and arr[mid] > arr[mid + 1]:
                 return mid
+            # suppose if the pivot lies in the left part of the array
+            # so mid should always be greater than start
+            # if it goes left side then array index out of bound exception
             if mid > start and arr[mid] < arr[mid - 1]:
                 return mid - 1
             if arr[mid] <= arr[start]:
