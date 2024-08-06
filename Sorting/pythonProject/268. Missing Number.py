@@ -7,6 +7,9 @@ class Solution:
     def missingNumber(self, arr: List[int]) -> int:
         i = 0
         while i < len(arr):
+            # since we are starting from 0, then we removed
+            # the traditional value formula
+            # index = value - 1
             correct = arr[i]
             # below condition checks the array out of bound case
             if arr[i] < len(arr) and arr[i] != arr[correct]:
