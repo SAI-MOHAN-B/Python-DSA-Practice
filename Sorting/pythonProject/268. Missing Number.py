@@ -12,6 +12,8 @@ class Solution:
             # index = value - 1
             correct = arr[i]
             # below condition checks the array out of bound case
+            # also written only for 0 - n based array
+            # not for 1-n based array
             if arr[i] < len(arr) and arr[i] != arr[correct]:
                 self.swap(arr,i,correct)
             else:
