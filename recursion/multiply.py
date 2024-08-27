@@ -15,3 +15,12 @@ def digit_sum(n):
     return (n%10)+(digit_sum(n//10))
 res = digit_sum(13)
 print(res)
+
+# printing the numbers in reverse order
+import math
+def digi(n):
+    if n == 0:
+        return
+    print(n)
+    digi(n=n-1)
+digi(5)
