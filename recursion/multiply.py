@@ -24,3 +24,13 @@ def digi(n):
     print(n)
     digi(n=n-1)
 digi(5)
+
+# reverse a number
+import math
+def digi(n):
+    if n<10:
+        print(n)
+        return n
+    print(n%10)
+    digi(n//10)
+digi(12345)
