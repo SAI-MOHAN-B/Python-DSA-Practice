@@ -34,3 +34,24 @@ def digi(n):
     print(n%10)
     digi(n//10)
 digi(12345)
+
+
+# Counting the number of zero's in the given number
+import math
+
+
+def count_num(n, c):
+    return helper(n, c)
+
+
+def helper(n, c):
+    if n == 0:
+        return c
+    rem = n % 10
+    if rem == 0:
+        return helper(n // 10, c + 1)
+    return helper(n // 10, c)
+
+
+res = count_num(30204, 0)
+print(res)
