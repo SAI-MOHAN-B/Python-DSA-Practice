@@ -23,3 +23,14 @@ def findIndex(arr,target,index):
         return index
     else:
         return findIndex(arr,target,index+1)
+# finding the index which is repetative
+def findIndexoccur(arr, target, index):
+    if index == len(arr) - 1:
+        return;
+    if arr[index] == target:
+        temp.append(index)
+    findIndexoccur(arr, target, index + 1)
+
+
+res = findIndexoccur([12, 13, 14, 15, 15, 16], 15, 0)
+print(temp)
