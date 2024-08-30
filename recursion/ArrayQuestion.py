@@ -5,6 +5,7 @@ def sorted(arr,index):
     
 res = sorted([1,2,32,4,5,6,7],0)
 print(res)
+
 # reverse Linear Search
 def searching(arr,target,index):
     if index == len(arr)-1 and arr[index] == target:
@@ -13,3 +14,12 @@ def searching(arr,target,index):
 
 test_data = searching([1,2,32,4,5,6,7],32,0)
 print(test_data)
+
+# reversing the index
+def findIndex(arr,target,index):
+    if index == len(arr):
+        return -1
+    if arr[index] == target:
+        return index
+    else:
+        return findIndex(arr,target,index+1)
